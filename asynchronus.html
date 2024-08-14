@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // setInterval(myfunction, 1000);
+
+        //function myfunction(){
+          //  let d=new Date()
+
+            //document.getElementById("demo").innerHTML=
+              // d.getHours() + " : " + d.getMinutes()+" : "+ d.getSeconds()
+        //}
+
+        async function msg(){
+            let promise = new Promise((resolve,reject)=>[
+                setTimeout(()=>resolve("done"),3000)
+            ]);
+            let result=await promise;
+            alert(result)
+        }
+        msg()
+    </script>
+</body>
+</html>

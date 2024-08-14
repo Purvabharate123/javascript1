@@ -9,34 +9,74 @@
         
     <script>
         // String
-        let name = "Purva";
-        console.log("Name: " + name);
+        //let name = "Purva";
+        //console.log("Name: " + name);
         
         // Number
-        let age = 25;
-        console.log("Age: " + age);
+        //let age = 25;
+        //console.log("Age: " + age);
         
         // Boolean
-        let isLoggedIn = true;
-        console.log("Is logged in: " + isLoggedIn);
+        //let isLoggedIn = true;
+        //console.log("Is logged in: " + isLoggedIn);
         
         // Array
-        let fruits = ["apple", "banana", "cherry"];
-        console.log("Fruits: " + fruits);
+        //let fruits = ["apple", "banana", "cherry"];
+        //console.log("Fruits: " + fruits);
         
         // Object
-        let person = {
-            firstName: "Purva",
-            lastName: "Bharate",
-            age: 25
-        };
-        console.log("Person: " + JSON.stringify(person));
+       // let person = {
+         //   firstName: "Purva",
+           // lastName: "Bharate",
+            //age: 25
+        //};
+        //console.log("Person: " + JSON.stringify(person));
         
         // Null
-        let car = null;
-        console.log("Car: " + car);
+        //let car = null;
+        //console.log("Car: " + car);
+
+        //let Jhon=[2000,30000,4000,5000]
+        //let prince=[4000,5000,6000,7000]
+         //let total_expanse=0
+         //for(let i=0; i<len;i++){
+           // total_expanse += Jhon[i]
+         //}
+         //document.write("Total expense of jhon :",total_expanse)
+         
+         //for(let i=0; i<len;i++){
+           // total_expanse +=Jhon[i]
+         //}
+        //document.write("Total expanses of jhon :",total_expanse)
+
+        //function sum(a,b=30){
+          //  return a+b
+        //}
+        //let result=sum(10,30)
+        //document.write(result)
+
+        //function sum(...args){
+         //let sum=0;
+         //for(let num of args){
+           // sum +=num
         
-        
+         //}
+         //return sum
+        //}
+        //let x=sum(4,5,6,7,8,9,10)
+        //document.write(x)
+
+        //let msg=()=>"Hello World"
+        //document.write(msg())
+
+        function display(name,callback){
+            document.write("hi"+" "+name+"<br>")
+            callback()
+        }
+        function callMe(){
+            document.write("Iam callback function")
+        }
+        display("Jhon",callMe)
        
     </script>
 </body>
