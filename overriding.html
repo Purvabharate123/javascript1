@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Overriding in JavaScript</title>
+</head>
+<body>
+
+    <h1>Method Overriding in JavaScript</h1>
+
+    <h2>Animal Sounds</h2>
+    <p id="animalSounds"></p>
+
+    <script>
+        // Base class
+        class Animal {
+            speak() {
+                return "Some generic animal sound";
+            }
+        }
+
+        // Subclass Dog
+        class Dog extends Animal {
+            speak() {
+                return "Woof!";
+            }
+        }
+
+        // Subclass Cat
+        class Cat extends Animal {
+            speak() {
+                return "Meow!";
+            }
+        }
+
+        // Create instances of Dog and Cat
+        let myDog = new Dog();
+        let myCat = new Cat();
+
+        // Display the sounds
+        let animalSounds = document.querySelector("#animalSounds");
+        animalSounds.textContent = `Dog says: ${myDog.speak()} | Cat says: ${myCat.speak()}`;
+    </script>
+
+</body>
+</html>

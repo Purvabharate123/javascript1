@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Map Example</title>
+</head>
+<body>
+
+    <h1>Using map() in JavaScript</h1>
+
+    <h2>Original Numbers</h2>
+    <ul id="originalList"></ul> <!-- Will display original numbers -->
+
+    <h2>Squared Numbers (Using map)</h2>
+    <ul id="squaredList"></ul> <!-- Will display squared numbers -->
+
+    <script>
+        // Original array of numbers
+        let numbers = [1, 2, 3, 4, 5];
+
+        // Display original numbers
+        let originalList = document.querySelector("#originalList");
+        numbers.forEach(function(num) {
+            let listItem = document.createElement("li");
+            listItem.textContent = "Number: " + num;
+            originalList.appendChild(listItem);
+        });
+
+        // Use map() to square each number
+        let squaredNumbers = numbers.map(function(num) {
+            return num * num;
+        });
+
+        // Display squared numbers
+        let squaredList = document.querySelector("#squaredList");
+        squaredNumbers.forEach(function(squaredNum) {
+            let listItem = document.createElement("li");
+            listItem.textContent = "Squared Number: " + squaredNum;
+            squaredList.appendChild(listItem);
+        });
+    </script>
+
+</body>
+</html>
